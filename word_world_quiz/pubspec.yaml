@@ -1,0 +1,38 @@
+
+name: word_world_quiz
+description: Build ready demo for Word World Quiz
+version: 1.0.0+8
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  confetti: ^0.7.0
+  google_mobile_ads: ^5.1.0
+  shared_preferences: ^2.2.2
+  flutter:
+    sdk: flutter
+  audioplayers: ^5.2.1
+  video_player: ^2.8.2
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/bg_music_1.wav
+    - assets/audio/bg_music_2.wav
+    - assets/audio/coin.wav
+    - assets/audio/win.wav
+    - assets/audio/level_unlock.wav
+    - assets/audio/lose.wav
+    - assets/audio/tap.wav
+    - assets/video/background_1.txt
+    - assets/video/background_2.txt
+    - assets/video/background_3.txt
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_background: "#FFFFFF" # Optional: sets background for Android adaptive icons

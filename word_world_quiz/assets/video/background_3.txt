@@ -1,0 +1,3 @@
+PLACEHOLDER for animated background video.
+Use MP4 looping gradients or abstract motion.
+Recommended: After Effects / Canva export MP4 (1080x1920, loop).
