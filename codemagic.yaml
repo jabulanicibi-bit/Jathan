@@ -9,13 +9,16 @@ workflows:
     scripts:
       - name: Flutter doctor and clean
         script: |
+          cd word_world_quiz
           flutter doctor
           flutter clean
       - name: Get Flutter dependencies
         script: |
+          cd word_world_quiz
           flutter packages pub get
       - name: Build iOS Debug App
         script: |
+          cd word_world_quiz
           flutter build ios --debug --no-codesign
     artifacts:
-      - build/ios/iphoneos/*.app
+      - word_world_quiz/build/ios/iphoneos/*.app
