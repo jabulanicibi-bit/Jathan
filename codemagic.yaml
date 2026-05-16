@@ -1,0 +1,21 @@
+workflows:
+  ios-debug-build:
+    name: iOS Unsigned Debug Build
+    max_build_duration: 30
+    instance_type: mac_mini_m2
+    environment:
+      flutter: stable
+      xcode: latest
+    scripts:
+      - name: Flutter doctor and clean
+        script: |
+          flutter doctor
+          flutter clean
+      - name: Get Flutter dependencies
+        script: |
+          flutter packages pub get
+      - name: Build iOS Debug App
+        script: |
+          flutter build ios --debug --no-codesign
+    artifacts:
+      - build/ios/iphoneos/*.app
